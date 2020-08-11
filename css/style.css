@@ -1,60 +1,54 @@
-/* -------------------------ESTILOS GENERALES------------------------- */
+/* -------------------ESTILOS GENERALES------------------ */
 html{
     background-image:url(/img/2363269.jpg);
     background-size:cover;
 }
-header, footer{
-  /* background-image: url(img/pato.png);  */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
- }
-/* ----------------------------------HEADER---------------------------------- */
+/* ------------------------HEADER------------------------ */
  header{
-     height: 101px;
-     background-color: rgb(230, 102, 102);
-     border-radius: 0 0 20px  0;
-     background-image:url(/img/puntos-01-01.png);
-     background-repeat: repeat-x;
-     background-size: contain;
-     background-position: 0em -1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 101px;
+    background-color: rgb(230, 102, 102);
+    border-radius: 0 0 40px  40px;
+    background-image:url(/img/puntos-01-01.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: 0em -1em;
  }
- header p.special{
+ header a.special{
     font-family: 'Luckiest Guy', cursive;  
     color: #fff;
-    font-size: 3em;
-    text-decoration: none;    
+    font-size: 5em;
+    text-decoration: none;
 }
-/* ----------------------------------MAIN---------------------------------- */
-main{
-    
-   
-}
-main div#principal{
+/* -----------------------MAIN onBoard----------------------- */
+main div#onBoard{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: 'Architects Daughter', cursive;
     font-size:2em;
-    padding: 10vh 10vw;
+    padding: 12vh 10vw;
 }
-main p{
-    margin: 10px 0px;
+main p.message{
     background-color: rgb(255,255,255, 0.85);
-    padding: 3%;
+    padding: 1%;
     border-radius: 10px;
     color: rgb(56, 56, 56);
+    width: 70vw;
+    text-align:center;
 }
-main a{
+main a.button{
     font-family: 'Luckiest Guy', cursive;
     text-decoration: none;
     color: #fff;
     font-size: 1.25em;
     margin: 5vh 10vw;
     background-color:  rgb(230, 102, 102);
-    padding: 15px;
+    padding: 1%;
     border-radius: 5px;
 }
 main a:hover{
@@ -66,7 +60,65 @@ main div p span.special{
     font-family: 'Luckiest Guy', cursive;
     color: rgb(230, 102, 102);
 }
-/* ----------------------------------FOOTER---------------------------------- */
+/* ----------------------MAIN game------------------ */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main div#game{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size:2em;
+    width: 50%;
+    text-align: center;
+    padding: 1%;
+    margin: 12vh 10vw;
+    background-color: rgb(255,255,255, 0.85);
+    border-radius: 10px;
+    color: rgb(56, 56, 56);
+}
+main p.question{
+    padding: 2%;
+}
+main a.answer{
+    padding: 1%;
+    text-align: left;
+    text-decoration:none;
+    color: rgb(56, 56, 56);
+}
+main a.answer:hover{
+    background-color: rgb(230, 102, 102, 0.5);
+    color: #fff;
+    border-radius: 10px;
+}
+main a.answer:active{
+    background-color: rgb(230, 102, 102);
+}
+/* ----------------------MAIN results------------------ */
+main div#punctuation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size:2em;
+    padding: 12vh 10vw;
+}
+main p.results{
+    background-color: rgb(255,255,255, 0.85);
+    padding: 5%;
+    border-radius: 10px;
+    color: rgb(56, 56, 56);
+    width: 70vw;
+    text-align:center;
+    width: 50%;
+}
+/* -------------------------FOOTER--------------------------- */
 footer div{
   /* background-color: rgb(230, 102, 102); */
   width: 100vw;
