@@ -1,0 +1,80 @@
+/* -------------------------ESTILOS GENERALES------------------------- */
+html{
+    background-image:url(/img/2363269.jpg);
+    background-size:cover;
+}
+header, footer{
+  /* background-image: url(img/pato.png);  */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ }
+/* ----------------------------------HEADER---------------------------------- */
+ header{
+     height: 101px;
+     background-color: rgb(230, 102, 102);
+     border-radius: 0 0 20px  0;
+     background-image:url(/img/puntos-01-01.png);
+     background-repeat: repeat-x;
+     background-size: contain;
+     background-position: 0em -1em;
+ }
+ header p.special{
+    font-family: 'Luckiest Guy', cursive;  
+    color: #fff;
+    font-size: 3em;
+    text-decoration: none;    
+}
+/* ----------------------------------MAIN---------------------------------- */
+main{
+    
+   
+}
+main div#principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size:2em;
+    padding: 10vh 10vw;
+}
+main p{
+    margin: 10px 0px;
+    background-color: rgb(255,255,255, 0.85);
+    padding: 3%;
+    border-radius: 10px;
+    color: rgb(56, 56, 56);
+}
+main a{
+    font-family: 'Luckiest Guy', cursive;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25em;
+    margin: 5vh 10vw;
+    background-color:  rgb(230, 102, 102);
+    padding: 15px;
+    border-radius: 5px;
+}
+main a:hover{
+    background-color: #fff;
+    color: rgb(230, 102, 102);
+}
+main div p span.special{
+    font-size: 1em;
+    font-family: 'Luckiest Guy', cursive;
+    color: rgb(230, 102, 102);
+}
+/* ----------------------------------FOOTER---------------------------------- */
+footer div{
+  /* background-color: rgb(230, 102, 102); */
+  width: 100vw;
+  height: 101px;
+  background-image: url(/img/pato.png);
+  background-size: 90px;
+}
+footer{
+   position: absolute;
+   bottom:0px; 
+}
