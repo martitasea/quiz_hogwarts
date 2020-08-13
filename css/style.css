@@ -125,7 +125,16 @@ footer div{
   height: 101px;
   background-image: url(/img/pato.png);
   background-size: 90px;
+  /* animation-name: nadar;
+  animation-duration: 1s;
+  animation-iteration-count: infinite; */
 }
+/* @keyframes nadar{
+    0%{ margin-left: 0px;}
+    50%{margin-left: 100px;}
+    100%{margin-left: 0px;}
+    0%{ margin-left: 0px;}
+} */
 footer{
    position: absolute;
    bottom:0px; 
