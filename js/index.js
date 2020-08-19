@@ -1,83 +1,92 @@
 let questionDb = [
     {
-        question: "1-¿Cúal es el lugar más frío de la tierra?",
+        question: "1-¿Qué famoso arquitecto construyó la casa de la cascada?",
         answers: [
-            "Base rusa Vostok, Antártida",
-            "Domo Fuji, Antártida",
-            "Base Amundse-Scott, USA"
+            "Mies van der Rohe",
+            "Frank Lloyd Wright",
+            "Antoni Gaudí"
         ],
+        image: "../img/casaCascada.jpg",
         rightAnswer: 1
     },
     {
-        question: "2-¿Cúal es el río más largo del mundo?",
+        question: "2-¿Cúal es el arquitecto del museo Guggenheim de Bilbao?",
         answers: [
-            "Amazonas",
-            "Nilo",
-            "Mississippi"
+            "Frank Ghery",
+            "Norman Foster",
+            "Rafael Moneo"
         ],
+        image: "../img/guggenheim.jpg",
         rightAnswer: 0
     },
     {
-        question: "3-¿De qué color es la bandera de Tonga?",
+        question: "3-¿Qué longitud tien la Gran Muralla China?",
         answers: [
-            "Azúl y verde",
-            "Amarilla y negra",
-            "Roja y blanca"
+            "6.400 km",
+            "3.150 km",
+            "840 km"
         ],
-        rightAnswer: 2
+        image: "../img/murallaChina.jpg",
+        rightAnswer: 0
     },
     {
-        question: "4-¿Cuál es el océano más grande?",
+        question: "4-¿Qué edificio es el de la fotografía?",
         answers: [
-            "Atlántico",
-            "Pacífico",
-            "Índico"
+            "Glass House, de Philip Johnson",
+            "Casa Rietveld Schröder, de Gerrit Rietveld",
+            "Case Study House 8, de  Charles y Ray Eames"
         ],
+        image: "../img/edificio01.jpg",
         rightAnswer: 1
     },
     {
-        question: "5-¿Cuál es el disco más vendido de la historia?",
+        question: "5-¿Dónde nació Norman Foster?",
         answers: [
-            "Thriller, de Michael Jackson",
-            "The dark side of the moon, de Pink Floyd",
-            "Back in black, de ACDC"
+            "Inglaterra",
+            "Australia",
+            "Nueva Zelanda"
         ],
+        image: "../img/normanFoster.jpg",
         rightAnswer: 0
     },
     {
-        question: "6-¿Cuál es el país más grande del mundo?",
+        question: "6-¿Cuál de los siguientes arquitectos no participó en eldiseño del Georges Pompidou de París?",
         answers: [
-            "Brasil",
-            "China",
-            "Rusia"
+            "Renzo Piano",
+            "Richard Rogers",
+            "Norman Foster"
         ],
+        image: "../img/pompidou.jpg",
         rightAnswer: 2
     },
     {
-        question: "7-¿Cuál es el país más poblado de la tierra?",
+        question: "7-¿En qué año comenzó a otorgarse el premio Pritzker de arquitectura?",
         answers: [
-            "China",
-            "Brasil",
-            "India"
+            "1979",
+            "1992",
+            "1963"
         ],
+        image: "../img/pritzker.png",
         rightAnswer: 0
     },
     {
-        question: "8-¿Cuál fue el primer metal que usó el hombre?",
+        question: "8-¿Cuál es el edificio de la fotografía?",
         answers: [
-            "Estaño",
-            "Plata",
-            "Cobre"
+            "Casa del Fascio",
+            "Filarmónica de Berlín",
+            "Asamblea de Chandigarh"
         ],
+        image: "../img/chandigarh.jpg",
         rightAnswer: 2
     },
     {
-        question: "9-¿Quién ganó el mundial de fútbol de 2014?",
+        question: "9-¿Qué es el Modulor?",
         answers: [
-            "Brasil",
-            "Alemania",
-            "España"
+            "La unidad de medida básica de la antigua Roma",
+            "Un ensayo sobre la escala humana aplicada a la arquitectura",
+            "Una escultura ciclópea construida en Francia"
         ],
+        image: "../img/modulor.png",
         rightAnswer: 1
     },
     {
@@ -87,12 +96,13 @@ let questionDb = [
             "Escaleno",
             "Equilátero"
         ],
+        image: "../img/triangulo.png",
         rightAnswer: 1
     }];
 
 let container = document.getElementById("game");
-let results=document.getElementById("punctuation");
-let cardResults=`
+let results = document.getElementById("punctuation");
+let cardResults = `
         <div id="punctuation">
             <p class="results"><span id="hits">X</span> ACIERTOS<br><span id="faults">X</span> FALLOS</p>
             <a class="button" class="special" href="question.html">COMENZAR!</a>
@@ -104,19 +114,22 @@ let cardAnswers = `
     <p class="question">${questionDb[click].question}</p>
     <a href="#" id="one" class="answer" onclick="cambio()" >a) ${questionDb[click].answers[0]}</p>
     <a href="#" id="two" class="answer" onclick="cambio()">b) ${questionDb[click].answers[1]}</p>
-    <a href="#" id="third" class="answer" onclick="cambio()">c) ${questionDb[click].answers[2]}</p>`;
+    <a href="#" id="third" class="answer" onclick="cambio()">c) ${questionDb[click].answers[2]}</p>
+    <img src=${questionDb[click].image} alt="No puedo mostar la imagen" title="The quiz">`;
+
 container.innerHTML = cardAnswers;
 
 function cambio() {
-    if (click < 2) {
+    if (click < 9) {
         click += 1;
         cardAnswers = `
             <p class="question">${questionDb[click].question}</p>
             <a href="#" id="one" class="answer" onclick="cambio()" >a) ${questionDb[click].answers[0]}</p>
             <a href="#" id="two" class="answer" onclick="cambio()">b) ${questionDb[click].answers[1]}</p>
-            <a href="#" id="third" class="answer" onclick="cambio()">c) ${questionDb[click].answers[2]}</p>`
+            <a href="#" id="third" class="answer" onclick="cambio()">c) ${questionDb[click].answers[2]}</p>
+            <img src=${questionDb[click].image} alt="image">`
         container.innerHTML = cardAnswers;
-    } 
+    }
     else { container.innerHTML = cardResults; }
 };
 

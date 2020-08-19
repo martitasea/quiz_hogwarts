@@ -99,6 +99,11 @@ main a.answer:hover{
 main a.answer:active{
     background-color: rgb(230, 102, 102);
 }
+main img{
+    height: 30vh;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
 /* ----------------------MAIN results------------------ */
 main div#punctuation{
     display: flex;
