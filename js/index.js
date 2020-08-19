@@ -89,48 +89,94 @@ let questionDb = [
         ],
         rightAnswer: 1
     }];
-// let container = document.getElementById("game")
-// questionDb.map((question) => {
-//     let card = `
-//             <p class="question">${questionDb.question}</p>
-//             <a href="#" class="answer">a) ${questionDb.answers[0]}</p>
-//             <a href="#" class="answer">b) ${questionDb.answers[1]}</p>
-//             <a href="#" class="answer">c) ${questionDb.answers[2]}</p>
-//         `;
-//     container.innerHTML += card;
-// })
-// questionDb.map((item) => {
-//     document.getElementById("question").innerHTML = questionDb.question;
-//     document.getElementById("one").innerHTML = "a) " + questionDb.answers[0];
-//     document.getElementById("two").innerHTML = "b) " + questionDb.answers[1];
-//     document.getElementById("third").innerHTML = "c) " + questionDb.answers[2];
-// })
 
-// console.log(questionDb[1].question)
+let container = document.getElementById("game");
+let results=document.getElementById("punctuation");
+let cardResults=`
+        <div id="punctuation">
+            <p class="results"><span id="hits">X</span> ACIERTOS<br><span id="faults">X</span> FALLOS</p>
+            <a class="button" class="special" href="question.html">COMENZAR!</a>
+        </div>`;
+
+// PARA QUE EN EL INICIO ME MUESTRE LA PRIMERA PREGUNTA DEL ARRAY
+let click = 0;
+let cardAnswers = `
+    <p class="question">${questionDb[click].question}</p>
+    <a href="#" id="one" class="answer" onclick="cambio()" >a) ${questionDb[click].answers[0]}</p>
+    <a href="#" id="two" class="answer" onclick="cambio()">b) ${questionDb[click].answers[1]}</p>
+    <a href="#" id="third" class="answer" onclick="cambio()">c) ${questionDb[click].answers[2]}</p>`;
+container.innerHTML = cardAnswers;
+
+function cambio() {
+    if (click < 2) {
+        click += 1;
+        cardAnswers = `
+            <p class="question">${questionDb[click].question}</p>
+            <a href="#" id="one" class="answer" onclick="cambio()" >a) ${questionDb[click].answers[0]}</p>
+            <a href="#" id="two" class="answer" onclick="cambio()">b) ${questionDb[click].answers[1]}</p>
+            <a href="#" id="third" class="answer" onclick="cambio()">c) ${questionDb[click].answers[2]}</p>`
+        container.innerHTML = cardAnswers;
+    } 
+    else { container.innerHTML = cardResults; }
+};
+
+    // TEMPLATE STRINGresults.html};}
 
 
-// ESTO FUNCIONA
-// document.getElementById("question").innerHTML = questionDb[0].question;
-// document.getElementById("one").innerHTML = "a) " + questionDb[0].answers[0];
-// document.getElementById("two").innerHTML = "b) " + questionDb[0].answers[1];
-// document.getElementById("third").innerHTML = "c) " + questionDb[0].answers[2];
-
-// console.log(document.getElementById("question"));
-
-// function cambiar() {
-//     document.getElementById("question").innerHTML = questionDb[0].question;
-//     document.getElementById("one").innerHTML = "a) " + questionDb[0].answers[0];
-//     document.getElementById("two").innerHTML = "b) " + questionDb[0].answers[1];
-//     document.getElementById("third").innerHTML = "c) " + questionDb[0].answers[2];
+// PARA QUE AL HACER CLICK EN CUALQUIER RESPUESTA, EL PROGRAMA SEPA QUE HEMOS HECHO CLICK Y EJECUTE LA FUNCIÓN CAMBIO
+// let a = document.getElementById("one");
+// a.onclick = () => {
+//     console.log("he hecho click en one")
+//     answersDB.push[0];
+//     click += 1;
+//     card = `
+//     <p class="question">${questionDb[click].question}</p>
+//     <a href="#" id="one" class="answer" >a) ${questionDb[click].answers[0]}</p>
+//     <a href="#" id="two" class="answer">b) ${questionDb[click].answers[1]}</p>
+//     <a href="#" id="third" class="answer">c) ${questionDb[click].answers[2]}</p>`
+//     container.innerHTML = card;
 // }
-// document.getElementsByClassName("answer").onclick = cambiar();
+// let b = document.getElementById("two");
+// b.onclick = () => {
+//     console.log("he hecho click en two")
+//     answersDB.push[1];
+//     click += 1;
+//     card = `
+//     <p class="question">${questionDb[click].question}</p>
+//     <a href="#" id="one" class="answer" >a) ${questionDb[click].answers[0]}</p>
+//     <a href="#" id="two" class="answer">b) ${questionDb[click].answers[1]}</p>
+//     <a href="#" id="third" class="answer">c) ${questionDb[click].answers[2]}</p>`
+//     container.innerHTML = card;
+// }
+// let c = document.getElementById("third")
+// c.onclick = () => {
+//     console.log("he hecho click en third")
+//     answersDB.push[2];
+//     click += 1;
+//     card = `
+//     <p class="question">${questionDb[click].question}</p>
+//     <a href="#" id="one" class="answer" >a) ${questionDb[click].answers[0]}</p>
+//     <a href="#" id="two" class="answer">b) ${questionDb[click].answers[1]}</p>
+//     <a href="#" id="third" class="answer">c) ${questionDb[click].answers[2]}</p>`
+//     container.innerHTML = card;
+// }
 
-// for (i = 0, i < questionDb.length, document.getElementsByClassName("answer.onclick"))
-
-document.getElementById("answer").map.onclick = () => {
-    console.log("Has hecho click")
-    cambiar()
-};
-function cambiar() {
-    document.getElementById("titulo").innerHTML = "Te he cambiado"
-};
+// function cambio() {
+//     console.log(click);
+//     console.log("cambio está funcionando!");
+//     console.log(answersDB);
+// card = `
+//     <p class="question">${questionDb[click].question}</p>
+//     <a href="#" id="one" class="answer">a) ${questionDb[click].answers[0]}</p>
+//     <a href="#" id="two" class="answer">b) ${questionDb[click].answers[1]}</p>
+//     <a href="#" id="third" class="answer">c) ${questionDb[click].answers[2]}</p>`
+//     container.innerHTML = card;
+//     console.log(card);
+// }
+// console.log(click);
+// click=7;
+// console.log(card);
+// let but = document.getElementById("boton")
+// but.onclick = () => {
+//     container.innerHTML = card;
+// }
