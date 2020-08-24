@@ -2,6 +2,7 @@
 html{
     background-image:url(../img/2363269.jpg);
     background-size:cover;
+    height: 100vh;
 }
 /* ------------------------HEADER------------------------ */
  header{
@@ -100,7 +101,8 @@ main a.answer:active{
     background-color: rgb(230, 102, 102);
 }
 main img{
-    height: 30vh;
+    width: 45%;
+    /* height: 30vh; */
     margin: 20px 0px;
     border-radius: 10px;
 }
