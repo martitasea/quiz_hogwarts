@@ -87,7 +87,8 @@ let numAnswers = questionDb.length;
 for (i = 0; i < numAnswers; i++) {
   answerDbCorrect.push(questionDb[i].rightAnswer);
 }
-console.log("Las respuestas correctas son " + answerDbCorrect);
+// console.log("Las respuestas correctas son " + answerDbCorrect);
+// console.log(answerDbCorrect);
 
 // CREAMOS UN ARRAY VACÍO PARA IR METIENDO LAS RESPUESTAS DEL CONCURSANTE
 let answerDb = [];
@@ -95,50 +96,98 @@ let answerDb = [];
 // HACEMOS QUE SE MUESTREN LAS SUCESIVAS PREGUNTAS
 let container = document.getElementById("game");
 let results = document.getElementById("punctuation");
-let cardResults = `
-<div id="punctuation">
-<p class="results"><span id="hits">${aciertos}</span> ACIERTOS<br><span id="faults">${fallos}</span> FALLOS</p>
-<a class="button" class="special" href="question.html">COMENZAR!</a>
-</div>    
-`;
 
 // PARA QUE EN EL INICIO ME MUESTRE LA PRIMERA PREGUNTA DEL ARRAY
 let click = 0;
 let cardAnswers = `
 <p class="question">${questionDb[click].question}</p>
-<a href="#" id="one" class="answer" onclick="cambio()" >a) ${questionDb[click].answers[0]}</p>
-<a href="#" id="two" class="answer" onclick="cambio()">b) ${questionDb[click].answers[1]}</p>
-<a href="#" id="third" class="answer" onclick="cambio()">c) ${questionDb[click].answers[2]}</p>
+<a href="#" id="one" class="answer" onclick="cambioOne()" >a) ${questionDb[click].answers[0]}</p>
+<a href="#" id="two" class="answer" onclick="cambioTwo()">b) ${questionDb[click].answers[1]}</p>
+<a href="#" id="third" class="answer" onclick="cambioThird()">c) ${questionDb[click].answers[2]}</p>
 <img src=${questionDb[click].image} alt="No puedo mostar la imagen" title="The quiz">
 `;
 container.innerHTML = cardAnswers;
 
 // HACEMOS LA FUNCIÓN QUE SE EJECUTA CUANDO SE HACE CLICK EN UNA RESPUESTA
-function cambio() {
+function cambioOne() {
   if (click < numAnswers - 1) {
     click += 1;
     cardAnswers = `
         <p class="question">${questionDb[click].question}</p>
-        <a href="#" id="one" class="answer" onclick="cambio()" >a) ${questionDb[click].answers[0]}</a>
-        <a href="#" id="two" class="answer" onclick="cambio()">b) ${questionDb[click].answers[1]}</a>
-        <a href="#" id="third" class="answer" onclick="cambio()">c) ${questionDb[click].answers[2]}</a>
+        <a href="#" id="one" class="answer" onclick="cambioOne()" >a) ${questionDb[click].answers[0]}</p>
+        <a href="#" id="two" class="answer" onclick="cambioTwo()">b) ${questionDb[click].answers[1]}</p>
+        <a href="#" id="third" class="answer" onclick="cambioThird()">c) ${questionDb[click].answers[2]}</p>
+        <img src=${questionDb[click].image} alt="image">`;
+    container.innerHTML = cardAnswers;
+    answerDb[click - 1] = 0;
+    // console.log("Las respuestas del concursante son " + answerDb);
+    // console.log(answerDb);
+  } else {
+    answerDb[numAnswers - 1] = 0;
+    console.log(answerDb);
+    console.log(answerDbCorrect);
+    comparar();
+  }
+}
+
+function cambioTwo() {
+  if (click < numAnswers - 1) {
+    click += 1;
+    cardAnswers = `
+        <p class="question">${questionDb[click].question}</p>
+        <a href="#" id="one" class="answer" onclick="cambioOne()" >a) ${questionDb[click].answers[0]}</p>
+        <a href="#" id="two" class="answer" onclick="cambioTwo()">b) ${questionDb[click].answers[1]}</p>
+        <a href="#" id="third" class="answer" onclick="cambioThird()">c) ${questionDb[click].answers[2]}</p>
         <img src=${questionDb[click].image} alt="image">`;
     container.innerHTML = cardAnswers;
     answerDb[click - 1] = 1;
-    console.log("Las respuestas del concursante son " + answerDb);
-    console.log(answerDb);
+    // console.log("Las respuestas del concursante son " + answerDb);
+    // console.log(answerDb);
   } else {
-    container.innerHTML = cardResults;
+    answerDb[numAnswers - 1] = 1;
+    console.log(answerDb);
+    console.log(answerDbCorrect);
+    comparar();
+  }
 }
 
+function cambioThird() {
+  if (click < numAnswers - 1) {
+    click += 1;
+    cardAnswers = `
+        <p class="question">${questionDb[click].question}</p>
+        <a href="#" id="one" class="answer" onclick="cambioOne()" >a) ${questionDb[click].answers[0]}</p>
+        <a href="#" id="two" class="answer" onclick="cambioTwo()">b) ${questionDb[click].answers[1]}</p>
+        <a href="#" id="third" class="answer" onclick="cambioThird()">c) ${questionDb[click].answers[2]}</p>
+        <img src=${questionDb[click].image} alt="image">`;
+    container.innerHTML = cardAnswers;
+    answerDb[click - 1] = 2;
+    // console.log("Las respuestas del concursante son " + answerDb);
+    // console.log(answerDb);
+  } else {
+    answerDb[numAnswers - 1] = 2;
+    console.log(answerDb);
+    console.log(answerDbCorrect);
+    comparar();
+  }
+}
 
 // COMPARAMOS LOS RESULTADOS DEL CONCURSANTE CON LOS CORRECTOS
-console.log("Respuestas del concursante"+answerDb);
-for (i = 0; i < numAnswers; i++) {
-    if (answerDb.length==answerDbCorrect.length && answerDbCorrect[i] == answerDb[i]) {
-        aciertos ++;
-        console.log("estos son los aciertos" + aciertos);
-    } else if (answerDb.length==answerDbCorrect){
-        fallos ++;
-    } else
-};
+function comparar() {
+  for (i = 0; i < numAnswers; i++) {
+    if (answerDbCorrect[i] == answerDb[i]) {
+      aciertos++;
+    } else {
+      fallos++;
+    }
+  }
+  console.log("aciertos " + aciertos);
+  console.log("fallos " + fallos);
+  let cardResults = `
+    <div id="punctuation">
+    <p class="results"><span id="hits">${aciertos}</span> ACIERTOS<br><span id="faults">${fallos}</span> FALLOS</p>
+    <a class="button" class="special" href="question.html">COMENZAR!</a>
+    </div>    
+    `;
+  container.innerHTML = cardResults;
+}
