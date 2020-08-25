@@ -1,124 +1,124 @@
 /* -------------------ESTILOS GENERALES------------------ */
-html{
-    background-image:url(../img/2363269.jpg);
-    background-size:cover;
-    height: 100vh;
+html {
+  background-image: url(../img/2363269.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 /* ------------------------HEADER------------------------ */
- header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 101px;
-    background-color: rgb(230, 102, 102);
-    border-radius: 0 0 40px  40px;
-    background-image:url(../img/puntos-01-01.png);
-    background-repeat: repeat-x;
-    background-size: contain;
-    background-position: 0em -1em;
- }
- header a.special{
-    font-family: 'Luckiest Guy', cursive;  
-    color: #fff;
-    font-size: 5em;
-    text-decoration: none;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 101px;
+  background-color: rgb(230, 102, 102);
+  border-radius: 0 0 40px 40px;
+  background-image: url(../img/puntos-01-01.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: 0em -1em;
+}
+header a.special {
+  font-family: "Luckiest Guy", cursive;
+  color: #fff;
+  font-size: 5em;
+  text-decoration: none;
 }
 /* -----------------------MAIN onBoard----------------------- */
-main div#onBoard{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Architects Daughter', cursive;
-    font-size:2em;
-    padding: 12vh 10vw;
+main div#onBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Architects Daughter", cursive;
+  font-size: 2em;
+  padding: 12vh 10vw;
 }
-main p.message{
-    background-color: rgb(255,255,255, 0.85);
-    padding: 1%;
-    border-radius: 10px;
-    color: rgb(56, 56, 56);
-    width: 70vw;
-    text-align:center;
+main p.message {
+  background-color: rgb(255, 255, 255, 0.85);
+  padding: 1%;
+  border-radius: 10px;
+  color: rgb(56, 56, 56);
+  width: 70vw;
+  text-align: center;
 }
-main a.button{
-    font-family: 'Luckiest Guy', cursive;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.25em;
-    margin: 5vh 10vw;
-    background-color:  rgb(230, 102, 102);
-    padding: 1%;
-    border-radius: 5px;
+main a.button {
+  font-family: "Luckiest Guy", cursive;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.25em;
+  margin: 5vh 10vw;
+  background-color: rgb(230, 102, 102);
+  padding: 1%;
+  border-radius: 5px;
 }
-main a:hover{
-    background-color: #fff;
-    color: rgb(230, 102, 102);
+main a:hover {
+  background-color: #fff;
+  color: rgb(230, 102, 102);
 }
-main div p span.special{
-    font-size: 1em;
-    font-family: 'Luckiest Guy', cursive;
-    color: rgb(230, 102, 102);
+main div p span.special {
+  font-size: 1em;
+  font-family: "Luckiest Guy", cursive;
+  color: rgb(230, 102, 102);
 }
 /* ----------------------MAIN game------------------ */
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-main div#game{
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
-    font-family: 'Architects Daughter', cursive;
-    font-size:2em;
-    width: 50%;
-    text-align: center;
-    padding: 1%;
-    margin: 12vh 10vw;
-    background-color: rgb(255,255,255, 0.85);
-    border-radius: 10px;
-    color: rgb(56, 56, 56);
+main div#game {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  font-family: "Architects Daughter", cursive;
+  font-size: 2em;
+  width: 50%;
+  text-align: center;
+  padding: 1%;
+  margin: 12vh 10vw;
+  background-color: rgb(255, 255, 255, 0.85);
+  border-radius: 10px;
+  color: rgb(56, 56, 56);
 }
-main p.question{
-    padding: 2%;
+main p.question {
+  padding: 2%;
 }
-main a.answer{
-    padding: 1%;
-    text-align: left;
-    text-decoration:none;
-    color: rgb(56, 56, 56);
+main a.answer {
+  padding: 1%;
+  text-align: left;
+  text-decoration: none;
+  color: rgb(56, 56, 56);
 }
-main a.answer:hover{
-    background-color: rgb(230, 102, 102, 0.5);
-    color: #fff;
-    border-radius: 10px;
+main a.answer:hover {
+  background-color: rgb(230, 102, 102, 0.5);
+  color: #fff;
+  border-radius: 10px;
 }
-main a.answer:active{
-    background-color: rgb(230, 102, 102);
+main a.answer:active {
+  background-color: rgb(230, 102, 102);
 }
-main img{
-    width: 45%;
-    /* height: 30vh; */
-    margin: 20px 0px;
-    border-radius: 10px;
+main img {
+  width: 45%;
+  /* height: 30vh; */
+  margin: 20px 0px;
+  border-radius: 10px;
 }
 /* ----------------------MAIN results------------------ */
-main div#punctuation{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Architects Daughter', cursive;
-    font-size:1em;
-    padding-top: 5vh;
+main div#punctuation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Architects Daughter", cursive;
+  font-size: 1em;
+  padding-top: 5vh;
 }
 
 /* -------------------------FOOTER--------------------------- */
-footer div{
+footer div {
   /* background-color: rgb(230, 102, 102); */
   width: 100vw;
   height: 101px;
@@ -134,7 +134,7 @@ footer div{
     100%{margin-left: 0px;}
     0%{ margin-left: 0px;}
 } */
-footer{
-   position: absolute;
-   bottom:0px; 
+footer {
+  position: absolute;
+  bottom: 0px;
 }

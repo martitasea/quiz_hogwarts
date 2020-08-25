@@ -141,4 +141,4 @@ for (i = 0; i < numAnswers; i++) {
     } else if (answerDb.length==answerDbCorrect){
         fallos ++;
     } else
-}
+};
