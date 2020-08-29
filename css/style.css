@@ -1,65 +1,65 @@
-/* -------------------ESTILOS GENERALES------------------ */
+/* --------------------------ESTILOS GENERALES------------------------- */
 html {
   background-image: url(../img/2363269.jpg);
   background-size: cover;
   height: 100vh;
+  color: white;
 }
-/* ------------------------HEADER------------------------ */
+
+/* ----------------------------HEADER---------------------------------- */
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 101px;
+  text-align: center;
+  height: 12vh;
   background-color: rgb(230, 102, 102);
-  border-radius: 0 0 40px 40px;
   background-image: url(../img/puntos-01-01.png);
   background-repeat: repeat-x;
-  background-size: contain;
+  background-size: 25vw;
   background-position: 0em -1em;
 }
 header a.special {
   font-family: "Luckiest Guy", cursive;
   color: #fff;
-  font-size: 5em;
+  font-size: 10vh;
   text-decoration: none;
+  position: relative;
+  top: 10px;
 }
+
 /* -----------------------MAIN onBoard----------------------- */
 main div#onBoard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-family: "Architects Daughter", cursive;
-  font-size: 2em;
-  padding: 12vh 10vw;
+  padding: 10vh 8vw;
 }
 main p.message {
   background-color: rgb(255, 255, 255, 0.85);
-  padding: 1%;
+  padding: 2%;
   border-radius: 10px;
   color: rgb(56, 56, 56);
-  width: 70vw;
-  text-align: center;
+  text-align: left;
+  width: 90vw;
+  font-size: 3.5vh;
 }
 main a.button {
   font-family: "Luckiest Guy", cursive;
   text-decoration: none;
   color: #fff;
-  font-size: 1.25em;
   margin: 5vh 10vw;
   background-color: rgb(230, 102, 102);
   padding: 1%;
   border-radius: 5px;
+  font-size: 6vh;
 }
 main a:hover {
   background-color: #fff;
   color: rgb(230, 102, 102);
 }
 main div p span.special {
-  font-size: 1em;
   font-family: "Luckiest Guy", cursive;
   color: rgb(230, 102, 102);
+  font-size: 1em;
 }
 /* ----------------------MAIN game------------------ */
 main {
@@ -71,20 +71,19 @@ main {
 main div#game {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   font-family: "Architects Daughter", cursive;
-  font-size: 2em;
-  width: 50%;
-  text-align: center;
-  padding: 1%;
-  margin: 12vh 10vw;
+  font-size: 3.5vh;
+  width: 90vw;
+  text-align: left;
+  padding: 2%;
+  margin: 10vh 0 2vh 0;
   background-color: rgb(255, 255, 255, 0.85);
   border-radius: 10px;
   color: rgb(56, 56, 56);
 }
 main p.question {
-  padding: 2%;
+  padding: 1%;
 }
 main a.answer {
   padding: 1%;
@@ -101,11 +100,9 @@ main a.answer:active {
   background-color: rgb(230, 102, 102);
 }
 main img {
-  width: 45%;
-  /* height: 30vh; */
   margin: 20px 0px;
   border-radius: 10px;
-}
+ }
 /* ----------------------MAIN results------------------ */
 main div#punctuation {
   display: flex;
@@ -113,28 +110,132 @@ main div#punctuation {
   align-items: center;
   justify-content: center;
   font-family: "Architects Daughter", cursive;
-  font-size: 1em;
+  font-size: 3.5vh;
   padding-top: 5vh;
 }
-
-/* -------------------------FOOTER--------------------------- */
-footer div {
-  /* background-color: rgb(230, 102, 102); */
-  width: 100vw;
-  height: 101px;
-  background-image: url(../img/pato.png);
-  background-size: 90px;
-  /* animation-name: nadar;
-  animation-duration: 1s;
-  animation-iteration-count: infinite; */
-}
-/* @keyframes nadar{
-    0%{ margin-left: 0px;}
-    50%{margin-left: 100px;}
-    100%{margin-left: 0px;}
-    0%{ margin-left: 0px;}
-} */
+/*-------------------------FOOTER--------------------------- */
 footer {
+  width: 100vw;
+  height: 5vh;
+  background-color:rgb(230, 102, 102);
   position: absolute;
   bottom: 0px;
 }
+footer div{
+  font-family: "Architects Daughter", cursive;
+  margin: 1vh;
+  font-size: 2vh;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------
+---------------------------------MINI----------------------------------
+----------------------------------------------------------------------- */
+@media (max-width: 300px) {
+  header a.special {
+    font-size: 7vh;
+    top: 20px;
+  }
+  main img {
+    width: 90%;
+    height: auto;
+  }
+}
+/* --------------------------------------------------------------------
+-------------------------------PHONES----------------------------------
+----------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  main img {
+    width: 90%;
+    height: auto;
+  }
+}
+/* --------------------------------------------------------------------
+--------------------------TABLETS PORTRAIT-----------------------------
+----------------------------------------------------------------------- */
+@media (min-width: 600px) and (max-width: 900px) {
+  header {
+    background-size: 15vw;
+  }
+  main p.message {
+    width: 75vw;
+  }
+  main div#game{
+    width: 75vw;
+  }
+  main img {
+    width: 90%;
+  }
+}
+/* --------------------------------------------------------------------
+--------------------------TABLETS LANDSCAPE----------------------------
+----------------------------------------------------------------------- */
+@media (min-width: 900px) and (max-width: 1200px) {
+  header {
+    background-size: 12vw;
+  }
+  main p.message {
+    width: 60vw;
+  }
+  main div#game{
+    width: 60vw;
+  }
+  main img {
+    width: 65%;
+  }
+}
+/* --------------------------------------------------------------------
+--------------------------------LAPTOP---------------------------------
+----------------------------------------------------------------------- */
+@media (min-width: 1200px) and (max-width: 1600px) {
+  header {
+    background-size: 10vw;
+  }
+  main p.message {
+    width: 60vw;
+  }
+  main div#game{
+    width: 60vw;
+  }
+  main img {
+    width: 70%;
+  }
+}
+/* --------------------------------------------------------------------
+------------------------------BIG-LAPTOP-------------------------------
+----------------------------------------------------------------------- */
+@media (min-width: 1200px) and (max-width: 1590px) {
+  header {
+    background-size: 10vw;
+  }
+  main p.message {
+    width: 60vw;
+  }
+  main div#game{
+    width: 60vw;
+  }
+  main img {
+    width: 70%;
+  }
+}
+/* --------------------------------------------------------------------
+-------------------------------DESKTOP---------------------------------
+----------------------------------------------------------------------- */
+@media (min-width: 1590px) and (max-width: 4000px) {
+  header {
+    background-size: 7.5vw;
+  }
+  header a.special {
+    top: 10px;
+  }
+  main p.message {
+    width: 50vw;
+  }
+  main div#game{
+    width: 50vw;
+  }
+  main img {
+    width: 55vh;
+  }
+}
+

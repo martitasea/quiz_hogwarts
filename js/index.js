@@ -5,19 +5,19 @@ let questionDb = [
   {
     question: "1 ¿Qué famoso arquitecto construyó la casa de la cascada?",
     answers: ["Mies van der Rohe", "Frank Lloyd Wright", "Antoni Gaudí"],
-    image: "/quiz/img/casaCascada.jpg",
+    image: "../img/casaCascada.jpg",
     rightAnswer: 1,
   },
   {
     question: "2 ¿Cúal es el arquitecto del museo Guggenheim de Bilbao?",
     answers: ["Frank Ghery", "Norman Foster", "Rafael Moneo"],
-    image: "/quiz/img/guggenheim.jpg",
+    image: "../img/guggenheim.jpg",
     rightAnswer: 0,
   },
   {
     question: "3 ¿Qué longitud tien la Gran Muralla China?",
     answers: ["6.400 km", "3.150 km", "840 km"],
-    image: "/quiz/img/murallaChina.jpg",
+    image: "../img/murallaChina.jpg",
     rightAnswer: 0,
   },
   {
@@ -27,27 +27,27 @@ let questionDb = [
       "Casa Rietveld Schröder, de Gerrit Rietveld",
       "Case Study House 8, de  Charles y Ray Eames",
     ],
-    image: "/quiz/img/edificio01.jpg",
+    image: "../img/edificio01.jpg",
     rightAnswer: 1,
   },
   {
     question: "5 ¿Dónde nació Norman Foster?",
     answers: ["Inglaterra", "Australia", "Nueva Zelanda"],
-    image: "/quiz/img/normanFoster.jpg",
+    image: "../img/normanFoster.jpg",
     rightAnswer: 0,
   },
   {
     question:
       "6  ¿Cuál de los siguientes arquitectos no participó en eldiseño del Georges Pompidou de París?",
     answers: ["Renzo Piano", "Richard Rogers", "Norman Foster"],
-    image: "/quiz/img/pompidou.jpg",
+    image: "../img/pompidou.jpg",
     rightAnswer: 2,
   },
   {
     question:
       "7 ¿En qué año comenzó a otorgarse el premio Pritzker de arquitectura?",
     answers: ["1979", "1992", "1963"],
-    image: "/quiz/img/pritzker.png",
+    image: "../img/pritzker.png",
     rightAnswer: 0,
   },
   {
@@ -57,7 +57,7 @@ let questionDb = [
       "Filarmónica de Berlín",
       "Asamblea de Chandigarh",
     ],
-    image: "/quiz/img/chandigarh.jpg",
+    image: "../img/chandigarh.jpg",
     rightAnswer: 2,
   },
   {
@@ -67,14 +67,14 @@ let questionDb = [
       "Un ensayo sobre la escala humana aplicada a la arquitectura",
       "Una escultura ciclópea construida en Francia",
     ],
-    image: "/quiz/img/modulor.png",
+    image: "../img/modulor.png",
     rightAnswer: 1,
   },
   {
     question:
       "10 ¿Cómo se llama el triangulo que tiene todos sus lados diferentes?",
     answers: ["Isósceles", "Escaleno", "Equilátero"],
-    image: "/quiz/img/triangulo.png",
+    image: "../img/triangulo.png",
     rightAnswer: 1,
   },
 ];
