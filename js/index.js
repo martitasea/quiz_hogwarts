@@ -83,7 +83,7 @@ let questionDb = [
 // GENERAMOS LAS VARIABLES QUE HARÁN EL LINK CON EL DOM
 // --------------------------------------------------------------
 let container = document.getElementById("game");
-console.log(container);
+// console.log(container);
 let results = document.getElementById("punctuation");
 
 // --------------------------------------------------------------
@@ -111,8 +111,8 @@ let cardAnswers = `
 <a href="#" id="third" class="answer" onclick="cambio(2)">c) ${questionDb[click].answers[2]}</a>
 <img src=${questionDb[click].image} alt="No puedo mostar la imagen" title="The quiz">
 `;
-console.log(container);
-console.log(cardAnswers);
+// console.log(container);
+// console.log(cardAnswers);
 container.innerHTML = cardAnswers;
 
 // --------------------------------------------------------------
@@ -129,11 +129,11 @@ function cambio(index) {
     <a href="#" id="third" class="answer" onclick="cambio(2)">c) ${questionDb[click].answers[2]}</a>
     <img src=${questionDb[click].image} alt="image">`;
     container.innerHTML = cardAnswers;
-    answerDb[click - 1] = 0;
-    // console.log("Las respuestas del concursante son " + answerDb);
-    // console.log(answerDb);
+    answerDb[click - 1] = index;
+    console.log("Las respuestas del concursante son " + answerDb);
+    console.log(answerDb);
   } else {
-    answerDb[numAnswers - 1] = 0;
+    answerDb[numAnswers - 1] = index;
     console.log(answerDb);
     console.log(answerDbCorrect);
     comparar();
@@ -152,6 +152,8 @@ let fallos = 0;
 function comparar() {
   for (i = 0; i < numAnswers; i++) {
     if (answerDbCorrect[i] == answerDb[i]) {
+      console.log("Correctas", answerDbCorrect);
+      console.log("Contestadas", answerDb);
       aciertos++;
     } else {
       fallos++;
