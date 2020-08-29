@@ -124,9 +124,9 @@ function cambio(index) {
     click += 1;
     cardAnswers = `
     <p class="question">${questionDb[click].question}</p>
-    <a href="#" id="one" class="answer" onclick="cambio(0)" >a) ${questionDb[click].answers[0]}</p>
-    <a href="#" id="two" class="answer" onclick="cambio(1)">b) ${questionDb[click].answers[1]}</p>
-    <a href="#" id="third" class="answer" onclick="cambio(2)">c) ${questionDb[click].answers[2]}</p>
+    <a href="#" id="one" class="answer" onclick="cambio(0)" >a) ${questionDb[click].answers[0]}</a>
+    <a href="#" id="two" class="answer" onclick="cambio(1)">b) ${questionDb[click].answers[1]}</a>
+    <a href="#" id="third" class="answer" onclick="cambio(2)">c) ${questionDb[click].answers[2]}</a>
     <img src=${questionDb[click].image} alt="image">`;
     container.innerHTML = cardAnswers;
     answerDb[click - 1] = 0;
