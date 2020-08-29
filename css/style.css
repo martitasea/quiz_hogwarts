@@ -1,6 +1,6 @@
 /* --------------------------ESTILOS GENERALES------------------------- */
 html {
-  background-image: url(../img/2363269.jpg);
+  background-image: url(/quiz/img/2363269.jpg);
   background-size: cover;
   height: 100vh;
   color: white;
@@ -11,7 +11,7 @@ header {
   text-align: center;
   height: 12vh;
   background-color: rgb(230, 102, 102);
-  background-image: url(../img/puntos-01-01.png);
+  background-image: url(/quiz/img/puntos-01-01.png);
   background-repeat: repeat-x;
   background-size: 25vw;
   background-position: 0em -1em;
@@ -102,7 +102,7 @@ main a.answer:active {
 main img {
   margin: 20px 0px;
   border-radius: 10px;
- }
+}
 /* ----------------------MAIN results------------------ */
 main div#punctuation {
   display: flex;
@@ -117,11 +117,11 @@ main div#punctuation {
 footer {
   width: 100vw;
   height: 5vh;
-  background-color:rgb(230, 102, 102);
+  background-color: rgb(230, 102, 102);
   position: absolute;
   bottom: 0px;
 }
-footer div{
+footer div {
   font-family: "Architects Daughter", cursive;
   margin: 1vh;
   font-size: 2vh;
@@ -160,7 +160,7 @@ footer div{
   main p.message {
     width: 75vw;
   }
-  main div#game{
+  main div#game {
     width: 75vw;
   }
   main img {
@@ -177,7 +177,7 @@ footer div{
   main p.message {
     width: 60vw;
   }
-  main div#game{
+  main div#game {
     width: 60vw;
   }
   main img {
@@ -194,7 +194,7 @@ footer div{
   main p.message {
     width: 60vw;
   }
-  main div#game{
+  main div#game {
     width: 60vw;
   }
   main img {
@@ -211,7 +211,7 @@ footer div{
   main p.message {
     width: 60vw;
   }
-  main div#game{
+  main div#game {
     width: 60vw;
   }
   main img {
@@ -231,11 +231,10 @@ footer div{
   main p.message {
     width: 50vw;
   }
-  main div#game{
+  main div#game {
     width: 50vw;
   }
   main img {
     width: 55vh;
   }
 }
-
