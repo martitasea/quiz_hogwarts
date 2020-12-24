@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Harryp";
   font-size: 20px;
-  src: url("../quiz_hogwarts/fonts/HARRYP.TTF");
+  src: url("/quiz_hogwarts/fonts/HARRYP.TTF");
   font-weight: normal;
   font-style: normal;
 }
 
 /* --------------------------ESTILOS GENERALES------------------------- */
 html {
-  background-image: url(../quiz_hogwarts/img/fondo.jpg);
+  background-image: url(/quiz_hogwarts/img/fondo.jpg);
   background-size: cover;
   height: 100vh;
   color: white;
