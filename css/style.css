@@ -1,7 +1,7 @@
-@font-face{
-  font-family: 'Harryp';
+@font-face {
+  font-family: "Harryp";
   font-size: 20px;
-  src: url('../quiz/fonts/HARRYP.TTF');
+  src: url("./quiz/fonts/HARRYP.TTF");
   font-weight: normal;
   font-style: normal;
 }
@@ -20,19 +20,19 @@ header {
   height: 10vh;
 }
 header a.special {
-  font-family: 'Harryp';
+  font-family: "Harryp";
   color: #000;
   font-size: 7.5vh;
   text-decoration: none;
   position: relative;
   top: 14px;
 }
-.special{
-  font-family: 'Harryp';
+.special {
+  font-family: "Harryp";
   color: #000;
 }
-.hogwarts{
-  font-family: 'Harryp';
+.hogwarts {
+  font-family: "Harryp";
   color: #000;
   font-size: 6vh;
   text-align: center;
@@ -45,7 +45,7 @@ main div#onBoard {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Langar', cursive;
+  font-family: "Langar", cursive;
   margin: 8vh 3vw;
   /* padding: 10vh 8vw; */
   background-color: rgb(255, 255, 255, 0.35);
@@ -71,7 +71,7 @@ main a:hover {
   color: rgb(37, 27, 4);
 }
 main div p span.special {
-  font-family: 'Langar', cursive;
+  font-family: "Langar", cursive;
   color: rgb(37, 27, 4);
   font-size: 1em;
 }
@@ -86,7 +86,7 @@ main div#game {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: 'Langar', cursive;
+  font-family: "Langar", cursive;
   font-size: 3.5vh;
   width: 90vw;
   text-align: left;
@@ -120,9 +120,9 @@ main img {
   margin: 20px auto;
   border-radius: 10px;
 }
-img.photo{
-  height:auto;
-  width:90vw;
+img.photo {
+  height: auto;
+  width: 90vw;
 }
 /* ----------------------MAIN results------------------ */
 main div#punctuation {
@@ -130,20 +130,20 @@ main div#punctuation {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Langar', cursive;
+  font-family: "Langar", cursive;
   font-size: 3.5vh;
   padding-top: 5vh;
   line-height: 1.25em;
   border-radius: 10px;
   padding: 4%;
 }
-.results{
-  font-family: 'Harryp';
+.results {
+  font-family: "Harryp";
   color: #000;
-  font-size:1.5em;
+  font-size: 1.5em;
   margin-top: 4vh;
 }
-text{
+text {
   padding: 3%;
 }
 /*-------------------------FOOTER--------------------------- */
@@ -155,7 +155,7 @@ footer {
   bottom: 0px;
 }
 footer div {
-  font-family: 'Harryp';
+  font-family: "Harryp";
   letter-spacing: 2px;
   /* font-family: 'Langar', cursive; */
   margin: 1vh;

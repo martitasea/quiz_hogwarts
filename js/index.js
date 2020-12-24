@@ -6,21 +6,21 @@ let questionDb = [
     question: "1 ¿Qué elemento comparten las varitas de Harry y Voldemort?",
     answers: ["Pluma de fénix", "Fibra de corazón de dragón", "Pelo de unicornio"],
     rightAnswer: 0,
-    image:"./quiz_hogwarts/img/varita.jpg",
+    image:"/quiz_hogwarts/img/varita.jpg",
     comment: "De hecho, las plumas venían del mismísimo Fawkes, el fénix de Dumbledore."
   },
   {
     question: "2 ¿Cuál es el Patronus de Luna Lovegood?",
     answers: ["Un gato", "Una liebre", "Un ciervo"],
     rightAnswer: 1,
-    image:"./quiz_hogwarts/img/Luna_Lovegood.jpg",
+    image:"/quiz_hogwarts/img/Luna_Lovegood.jpg",
     comment: "Tal cual lo vimos en La Orden del Fénix."
   },
   {
     question: "3 ¿En qué libro se besan Harry y Ginny por primera vez, y en dónde?",
     answers: ["En La Orden del Fénix, en la Sala de los Menesteres", "En El Cáliz de Fuego, en Hogsmeade", "En El Príncipe Mestizo, en la sala común de Gryffindor"],
     rightAnswer: 2,
-    image:"./quiz_hogwarts/img/beso.jpg",
+    image:"/quiz_hogwarts/img/beso.jpg",
     comment: "Mientras que en la película se besan en la Sala de los Menesteres, en el libro es en la Sala Común después de un juego de Quidditch."
   },
   {
@@ -31,21 +31,21 @@ let questionDb = [
       "Lily Alba.",
     ],
     rightAnswer: 0,
-    image:"./quiz_hogwarts/img/lily.jpg",
+    image:"/quiz_hogwarts/img/lily.jpg",
     comment: "Su nombre completo es Lily Luna en honor a la mamá de Harry, a Luna Lovegood y a 'Lunático', el apodo de Remus Lupin."
   },
   {
     question: "5 ¿Cómo se llama la mamá de Hagrid?",
     answers: ["Wilhemina", "Maxine", "Fridwulfa"],
     rightAnswer: 2,
-    image:"./quiz_hogwarts/img/hagrid.jpg",
+    image:"/quiz_hogwarts/img/hagrid.jpg",
     comment: "La mamá de Hagrid y Grawp se llamaba Fridwulfa."
   },
   {
     question: "6  ¿Qué espíritu NO aparece en el cementerio, en el libro Harry Potter y el Cáliz de Fuego?",
     answers: ["Frank Bryce", "Artemisia Lufkin", "Bertha Jorkins"],
     rightAnswer: 1,
-    image:"./quiz_hogwarts/img/cementerio.jpg",
+    image:"/quiz_hogwarts/img/cementerio.jpg",
     comment: "Tanto Frank Bryce como Bertha Jorkins aparecieron junto con los papás de Harry y Cedric Diggory en el cementerio.De hecho, las plumas venían del mismísimo Fawkes, el fénix de Dumbledore."
   },
   {
@@ -55,7 +55,7 @@ let questionDb = [
       "El 19 de Septiembre, en el mismo mes que Hermione",
       "El 31 de Diciembre, en el mismo mes que Voldemort"],
     rightAnswer: 0,
-    image:"./quiz_hogwarts/img/neville.jpg",
+    image:"/quiz_hogwarts/img/neville.jpg",
     comment: "Harry y Neville comparten mes de cumpleaños e incluso hay una teoría de que él también pudo haber sido 'El Elegido'."
   },
   {
@@ -66,7 +66,7 @@ let questionDb = [
       "Elphias Doge",
     ],
     rightAnswer: 1,
-    image:"./quiz_hogwarts/img/books.png",
+    image:"/quiz_hogwarts/img/books.png",
     comment: "El poltergeist nunca aparece en las películas "
   },
   {
@@ -77,7 +77,7 @@ let questionDb = [
       "No se sabe",
     ],
     rightAnswer: 1,
-    image:"./quiz_hogwarts/img/voldemort.jpg",
+    image:"/quiz_hogwarts/img/voldemort.jpg",
     comment: "Herpo fue un mago de la antigua Grecia al que se le adjudica el primer horrocrux y ser uno de los primeros en hablar Parsel."
   },
   {
@@ -88,7 +88,7 @@ let questionDb = [
       "Michael Corner", 
       "Roger Davies"],
     rightAnswer: 2,
-    image:"./quiz_hogwarts/img/dumbledore.jpg",
+    image:"/quiz_hogwarts/img/dumbledore.jpg",
     comment: "Lo más que hizo el Ravenclaw fue llevar a Fleur Delacour al baile de Yule y ser capitán de su equipo de Quidditch."
   },
   {
@@ -99,7 +99,7 @@ let questionDb = [
       "Eloise", 
       "Mafalda"],
     rightAnswer: 0,
-    image:"./quiz_hogwarts/img/srafigg.jpg",
+    image:"/quiz_hogwarts/img/srafigg.jpg",
     comment: "Arabella Doreen Figg era la squib encargada de vigilar a Harry mientras vivía con los Dursley."
   },
   {
@@ -110,7 +110,7 @@ let questionDb = [
       "Huevo podrido", 
       "Cera de oído"],
     rightAnswer: 2,
-    image:"./quiz_hogwarts/img/bertie.png",
+    image:"/quiz_hogwarts/img/bertie.png",
     comment: "Aunque prometió nunca probar un Bertie Bott's de nuevo después de que le saliera uno de vómito, en la enfermería se comió uno... con sabor a cera de oído."
   },
   {
@@ -121,7 +121,7 @@ let questionDb = [
       "2.795 libras.", 
       "Nada si aciertas todas las preguntas del quiz."],
     rightAnswer: 1,
-    image:"./quiz_hogwarts/img/hogwarts.jpg",
+    image:"/quiz_hogwarts/img/hogwarts.jpg",
     comment: "La matrícula es gratis si has acertado todas las preguntas. ¡Apúntate!"
   },
 ];
