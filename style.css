@@ -2,6 +2,7 @@
   font-family: "Harryp";
   font-size: 16px;
   src: url("/quiz_hogwarts/fonts/HARRYP.TTF");
+  /* src: url("/fonts/HARRYP.TTF"); */
   font-weight: normal;
   font-style: normal;
 }
@@ -37,7 +38,7 @@ header a.special {
   font-size: 6vh;
   text-align: center;
   margin: 10px 0;
-  line-height: 1.25em;
+  line-height: 1.15em;
 }
 
 /* -----------------------MAIN onBoard----------------------- */
