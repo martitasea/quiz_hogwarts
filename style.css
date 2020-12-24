@@ -35,10 +35,10 @@ header a.special {
 .hogwarts {
   font-family: "Harryp";
   color: #000;
-  font-size: 5vh;
+  font-size: 4vh;
   text-align: center;
   margin: 10px 0;
-  line-height: 1.15em;
+  line-height: 1em;
 }
 
 /* -----------------------MAIN onBoard----------------------- */
