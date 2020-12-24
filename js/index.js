@@ -3,79 +3,126 @@
 // --------------------------------------------------------------
 let questionDb = [
   {
-    question: "1 ¿Qué famoso arquitecto construyó la casa de la cascada?",
-    answers: ["Mies van der Rohe", "Frank Lloyd Wright", "Antoni Gaudí"],
-    image: "/quiz/img/casaCascada.jpg",
+    question: "1 ¿Qué elemento comparten las varitas de Harry y Voldemort?",
+    answers: ["Pluma de fénix", "Fibra de corazón de dragón", "Pelo de unicornio"],
+    rightAnswer: 0,
+    image:"./quiz_hogwarts/img/varita.jpg",
+    comment: "De hecho, las plumas venían del mismísimo Fawkes, el fénix de Dumbledore."
+  },
+  {
+    question: "2 ¿Cuál es el Patronus de Luna Lovegood?",
+    answers: ["Un gato", "Una liebre", "Un ciervo"],
     rightAnswer: 1,
+    image:"./quiz_hogwarts/img/Luna_Lovegood.jpg",
+    comment: "Tal cual lo vimos en La Orden del Fénix."
   },
   {
-    question: "2 ¿Cúal es el arquitecto del museo Guggenheim de Bilbao?",
-    answers: ["Frank Ghery", "Norman Foster", "Rafael Moneo"],
-    image: "/quiz/img/guggenheim.jpg",
-    rightAnswer: 0,
-  },
-  {
-    question: "3 ¿Qué longitud tien la Gran Muralla China?",
-    answers: ["6.400 km", "3.150 km", "840 km"],
-    image: "/quiz/img/murallaChina.jpg",
-    rightAnswer: 0,
-  },
-  {
-    question: "4 ¿Qué edificio es el de la fotografía?",
-    answers: [
-      "Glass House, de Philip Johnson",
-      "Casa Rietveld Schröder, de Gerrit Rietveld",
-      "Case Study House 8, de  Charles y Ray Eames",
-    ],
-    image: "/quiz/img/edificio01.jpg",
-    rightAnswer: 1,
-  },
-  {
-    question: "5 ¿Dónde nació Norman Foster?",
-    answers: ["Inglaterra", "Australia", "Nueva Zelanda"],
-    image: "/quiz/img/normanFoster.jpg",
-    rightAnswer: 0,
-  },
-  {
-    question:
-      "6  ¿Cuál de los siguientes arquitectos no participó en eldiseño del Georges Pompidou de París?",
-    answers: ["Renzo Piano", "Richard Rogers", "Norman Foster"],
-    image: "/quiz/img/pompidou.jpg",
+    question: "3 ¿En qué libro se besan Harry y Ginny por primera vez, y en dónde?",
+    answers: ["En La Orden del Fénix, en la Sala de los Menesteres", "En El Cáliz de Fuego, en Hogsmeade", "En El Príncipe Mestizo, en la sala común de Gryffindor"],
     rightAnswer: 2,
+    image:"./quiz_hogwarts/img/beso.jpg",
+    comment: "Mientras que en la película se besan en la Sala de los Menesteres, en el libro es en la Sala Común después de un juego de Quidditch."
   },
   {
-    question:
-      "7 ¿En qué año comenzó a otorgarse el premio Pritzker de arquitectura?",
-    answers: ["1979", "1992", "1963"],
-    image: "/quiz/img/pritzker.png",
+    question: "4 ¿Cómo se llama la hija de Ginny y Harry?",
+    answers: [
+      "Lily Luna.",
+      "Lily Hermione",
+      "Lily Alba.",
+    ],
     rightAnswer: 0,
+    image:"./quiz_hogwarts/img/lily.jpg",
+    comment: "Su nombre completo es Lily Luna en honor a la mamá de Harry, a Luna Lovegood y a 'Lunático', el apodo de Remus Lupin."
   },
   {
-    question: "8 ¿Cuál es el edificio de la fotografía?",
-    answers: [
-      "Casa del Fascio",
-      "Filarmónica de Berlín",
-      "Asamblea de Chandigarh",
-    ],
-    image: "/quiz/img/chandigarh.jpg",
+    question: "5 ¿Cómo se llama la mamá de Hagrid?",
+    answers: ["Wilhemina", "Maxine", "Fridwulfa"],
     rightAnswer: 2,
+    image:"./quiz_hogwarts/img/hagrid.jpg",
+    comment: "La mamá de Hagrid y Grawp se llamaba Fridwulfa."
   },
   {
-    question: "9 ¿Qué es el Modulor?",
-    answers: [
-      "La unidad de medida básica de la antigua Roma",
-      "Un ensayo sobre la escala humana aplicada a la arquitectura",
-      "Una escultura ciclópea construida en Francia",
-    ],
-    image: "/quiz/img/modulor.png",
+    question: "6  ¿Qué espíritu NO aparece en el cementerio, en el libro Harry Potter y el Cáliz de Fuego?",
+    answers: ["Frank Bryce", "Artemisia Lufkin", "Bertha Jorkins"],
     rightAnswer: 1,
+    image:"./quiz_hogwarts/img/cementerio.jpg",
+    comment: "Tanto Frank Bryce como Bertha Jorkins aparecieron junto con los papás de Harry y Cedric Diggory en el cementerio.De hecho, las plumas venían del mismísimo Fawkes, el fénix de Dumbledore."
+  },
+  {
+    question: "7 ¿En qué fecha nació Neville y con quién comparte mes de cumpleaños?",
+    answers: [
+      "El 30 de Julio, en el mimso mes que Harry",
+      "El 19 de Septiembre, en el mismo mes que Hermione",
+      "El 31 de Diciembre, en el mismo mes que Voldemort"],
+    rightAnswer: 0,
+    image:"./quiz_hogwarts/img/neville.jpg",
+    comment: "Harry y Neville comparten mes de cumpleaños e incluso hay una teoría de que él también pudo haber sido 'El Elegido'."
+  },
+  {
+    question: "8 ¿Qué personaje de los libros no existe en las películas?",
+    answers: [
+      "Barty Crouch Jr.",
+      "Peeves",
+      "Elphias Doge",
+    ],
+    rightAnswer: 1,
+    image:"./quiz_hogwarts/img/books.png",
+    comment: "El poltergeist nunca aparece en las películas "
+  },
+  {
+    question: "9 Voldemort fue el primer mago en hacer un horrocrux.",
+    answers: [
+      "Cierto",
+      "Falso",
+      "No se sabe",
+    ],
+    rightAnswer: 1,
+    image:"./quiz_hogwarts/img/voldemort.jpg",
+    comment: "Herpo fue un mago de la antigua Grecia al que se le adjudica el primer horrocrux y ser uno de los primeros en hablar Parsel."
   },
   {
     question:
-      "10 ¿Cómo se llama el triangulo que tiene todos sus lados diferentes?",
-    answers: ["Isósceles", "Escaleno", "Equilátero"],
-    image: "/quiz/img/triangulo.png",
+      "10 ¿Quién NO fue parte del Ejército de Dumbledore?",
+    answers: [
+      "Lavender Brown", 
+      "Michael Corner", 
+      "Roger Davies"],
+    rightAnswer: 2,
+    image:"./quiz_hogwarts/img/dumbledore.jpg",
+    comment: "Lo más que hizo el Ravenclaw fue llevar a Fleur Delacour al baile de Yule y ser capitán de su equipo de Quidditch."
+  },
+  {
+    question:
+      "11 El nombre de la Sra. Figg es...",
+    answers: [
+      "Arabella", 
+      "Eloise", 
+      "Mafalda"],
+    rightAnswer: 0,
+    image:"./quiz_hogwarts/img/srafigg.jpg",
+    comment: "Arabella Doreen Figg era la squib encargada de vigilar a Harry mientras vivía con los Dursley."
+  },
+  {
+    question:
+      "12 ¿Qué sabor de caramelos Bertie Bott's le toca a Dumbledore en la enfermería?",
+    answers: [
+      "Vómito", 
+      "Huevo podrido", 
+      "Cera de oído"],
+    rightAnswer: 2,
+    image:"./quiz_hogwarts/img/bertie.png",
+    comment: "Aunque prometió nunca probar un Bertie Bott's de nuevo después de que le saliera uno de vómito, en la enfermería se comió uno... con sabor a cera de oído."
+  },
+  {
+    question:
+      "13 ¿Cuánto cuesta la matrícula en Hogwarts?",
+    answers: [
+      "985 libras.", 
+      "2.795 libras.", 
+      "Nada si aciertas todas las preguntas del quiz."],
     rightAnswer: 1,
+    image:"./quiz_hogwarts/img/hogwarts.jpg",
+    comment: "La matrícula es gratis si has acertado todas las preguntas. ¡Apúntate!"
   },
 ];
 
@@ -83,7 +130,6 @@ let questionDb = [
 // GENERAMOS LAS VARIABLES QUE HARÁN EL LINK CON EL DOM
 // --------------------------------------------------------------
 let container = document.getElementById("game");
-// console.log(container);
 let results = document.getElementById("punctuation");
 
 // --------------------------------------------------------------
@@ -109,7 +155,7 @@ let cardAnswers = `
 <a href="#" id="one" class="answer" onclick="cambio(0)" >a) ${questionDb[click].answers[0]}</a>
 <a href="#" id="two" class="answer" onclick="cambio(1)">b) ${questionDb[click].answers[1]}</a>
 <a href="#" id="third" class="answer" onclick="cambio(2)">c) ${questionDb[click].answers[2]}</a>
-<img src=${questionDb[click].image} alt="No puedo mostar la imagen" title="The quiz">
+<img src=${questionDb[click].image} alt="No puedo mostar la imagen" class="photo" title="The quiz">
 `;
 // console.log(container);
 // console.log(cardAnswers);
@@ -127,15 +173,11 @@ function cambio(index) {
     <a href="#" id="one" class="answer" onclick="cambio(0)" >a) ${questionDb[click].answers[0]}</a>
     <a href="#" id="two" class="answer" onclick="cambio(1)">b) ${questionDb[click].answers[1]}</a>
     <a href="#" id="third" class="answer" onclick="cambio(2)">c) ${questionDb[click].answers[2]}</a>
-    <img src=${questionDb[click].image} alt="image">`;
+    <img src=${questionDb[click].image} alt="image" class="photo">`;
     container.innerHTML = cardAnswers;
     answerDb[click - 1] = index;
-    console.log("Las respuestas del concursante son " + answerDb);
-    console.log(answerDb);
   } else {
     answerDb[numAnswers - 1] = index;
-    console.log(answerDb);
-    console.log(answerDbCorrect);
     comparar();
   }
 }
@@ -152,19 +194,24 @@ let fallos = 0;
 function comparar() {
   for (i = 0; i < numAnswers; i++) {
     if (answerDbCorrect[i] == answerDb[i]) {
-      console.log("Correctas", answerDbCorrect);
-      console.log("Contestadas", answerDb);
       aciertos++;
     } else {
       fallos++;
     }
   }
-  console.log("aciertos " + aciertos);
-  console.log("fallos " + fallos);
+  let mensaje;
+  if (aciertos == numAnswers) {
+    mensaje = "Eres la máxima autoridad cuando se trata de Harry Potter y no hay quien te haga competencia. Por lo que te mereces saber la siguiente pista...pero no iba a ser tan fácil. Mete el pergamino en en el congelador y deja que haga su magia..." ;
+  } else if (aciertos > fallos) {
+    mensaje = "Sabes que eres un Potterhead y no hay quien lo niegue. Por lo que te mereces saber la siguiente pista...pero no iba a ser tan fácil. Mete el pergamino en en el sitio más frío de la casa y deja que haga su magia...";
+  } else {
+    mensaje = "Lo siento pero para conseguir el diploma debes intentarlo otra vez. Si pensabas que era fácil, lamentamos demostrarte lo contrario. Lo cierto es que os faltan muchas cosas por descubrir del maravilloso mundo de Harry Potter.";
+  }
   let cardResults = `
     <div id="punctuation">
+    <p class="text">${mensaje}</p>
     <p class="results"><span id="hits">${aciertos}</span> ACIERTOS<br><span id="faults">${fallos}</span> FALLOS</p>
-    <a class="button" class="special" href="question.html">COMENZAR!</a>
+    <a class="button special" href="question.html">COMENZAR</a>
     </div>    
     `;
   container.innerHTML = cardResults;
