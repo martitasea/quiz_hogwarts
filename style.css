@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Harryp";
-  font-size: 20px;
+  font-size: 16px;
   src: url("/quiz_hogwarts/fonts/HARRYP.TTF");
   font-weight: normal;
   font-style: normal;
@@ -22,7 +22,7 @@ header {
 header a.special {
   font-family: "Harryp";
   color: #000;
-  font-size: 7.5vh;
+  font-size: 7vh;
   text-decoration: none;
   position: relative;
   top: 14px;
@@ -49,7 +49,7 @@ main div#onBoard {
   margin: 8vh 3vw;
   /* padding: 10vh 8vw; */
   background-color: rgb(255, 255, 255, 0.35);
-  font-size: 3.5vh;
+  font-size: 3vh;
   border-radius: 10px;
   padding: 4%;
   line-height: 1.5em;
@@ -87,7 +87,7 @@ main div#game {
   flex-direction: column;
   justify-content: center;
   font-family: "Langar", cursive;
-  font-size: 3.5vh;
+  font-size: 3vh;
   width: 90vw;
   text-align: left;
   padding: 2%;
@@ -102,7 +102,7 @@ main p.question {
   line-height: 1.25em;
 }
 main a.answer {
-  padding: 2%;
+  padding: 1%;
   text-align: left;
   text-decoration: none;
   color: rgb(56, 56, 56);
@@ -121,8 +121,8 @@ main img {
   border-radius: 10px;
 }
 img.photo {
+  width: 80%;
   height: auto;
-  width: 90vw;
 }
 /* ----------------------MAIN results------------------ */
 main div#punctuation {
@@ -131,7 +131,7 @@ main div#punctuation {
   align-items: center;
   justify-content: center;
   font-family: "Langar", cursive;
-  font-size: 3.5vh;
+  font-size: 3vh;
   padding-top: 5vh;
   line-height: 1.25em;
   border-radius: 10px;
@@ -157,7 +157,6 @@ footer {
 footer div {
   font-family: "Harryp";
   letter-spacing: 2px;
-  /* font-family: 'Langar', cursive; */
   margin: 1vh;
   font-size: 2vh;
   text-align: center;

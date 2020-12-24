@@ -201,11 +201,11 @@ function comparar() {
   }
   let mensaje;
   if (aciertos == numAnswers) {
-    mensaje = "Eres la máxima autoridad cuando se trata de Harry Potter y no hay quien te haga competencia. Por lo que te mereces saber la siguiente pista...pero no iba a ser tan fácil. Mete el pergamino en en el congelador y deja que haga su magia..." ;
+    mensaje = "Sois la máxima autoridad cuando se trata de Harry Potter y no hay quien os haga competencia. Por lo que os mereceis en toda regla vuestro diploma. ¿O es que acaso las preguntas no eran lo suficientemente difíciles...?" ;
   } else if (aciertos > fallos) {
-    mensaje = "Sabes que eres un Potterhead y no hay quien lo niegue. Por lo que te mereces saber la siguiente pista...pero no iba a ser tan fácil. Mete el pergamino en en el sitio más frío de la casa y deja que haga su magia...";
+    mensaje = "Sabeis que sois unos Potterhead y no hay quien lo niegue, aunque hayais aprobado de raspadillo. ¿Os dijeron que no valía mirar en internet? Pedid el diploma pero, ¡pensaremos si teines que ir a examen oral!";
   } else {
-    mensaje = "Lo siento pero para conseguir el diploma debes intentarlo otra vez. Si pensabas que era fácil, lamentamos demostrarte lo contrario. Lo cierto es que os faltan muchas cosas por descubrir del maravilloso mundo de Harry Potter.";
+    mensaje = "Lo siento pero para conseguir el diploma debeis intentarlo otra vez. Si pensabais que era fácil, lamentamos demostraros lo contrario. Lo cierto es que os faltan muchas cosas por descubrir del maravilloso mundo de Harry Potter.";
   }
   let cardResults = `
     <div id="punctuation">
