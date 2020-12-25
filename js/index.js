@@ -72,7 +72,7 @@ let questionDb = [
   {
     question: "9 Voldemort fue el primer mago en hacer un horrocrux.",
     answers: [
-      "Cierto",
+      "Cierto",v 
       "Falso",
       "No se sabe",
     ],
@@ -120,7 +120,7 @@ let questionDb = [
       "985 libras.", 
       "2.795 libras.", 
       "Nada si aciertas todas las preguntas del quiz."],
-    rightAnswer: 1,
+    rightAnswer: 2,
     image:"/quiz_hogwarts/img/hogwarts.jpg",
     comment: "La matrícula es gratis si has acertado todas las preguntas. ¡Apúntate!"
   },
