@@ -72,7 +72,7 @@ let questionDb = [
   {
     question: "9 Voldemort fue el primer mago en hacer un horrocrux.",
     answers: [
-      "Cierto",v 
+      "Cierto",
       "Falso",
       "No se sabe",
     ],
